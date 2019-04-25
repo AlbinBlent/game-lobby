@@ -1,0 +1,36 @@
+.Lobby {
+  background-color: lightblue;
+}
+
+.LobbyGameList {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.LobbyGameTile {
+  display: flex;
+  justify-content: space-evenly;
+  height: 200px;
+  width: 200px;
+  border-color: green;
+  border-radius: 4px;
+  border-style: solid;
+  flex-direction: column;
+  cursor: pointer;
+}
+.LobbyGameTile div {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.LobbyGameTile img {
+  width: 100px;
+  align-self: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .lobbyButton {
+    border-width: 4px;
+  }
+}
