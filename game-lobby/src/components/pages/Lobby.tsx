@@ -1,9 +1,7 @@
-import React, { useState, useEffect, SyntheticEvent } from 'react'
+import React, { useState, useEffect } from 'react'
 import Api from '../../services/api'
 import { GameInfo, FilterType } from '../../types/apiTypes'
 import './Lobby.css'
-
-// ToDo laddningsikon och felhantering
 
 export default function Lobby() {
   const [gamesState, setGamesState] = useState<GameInfo[]>([])

@@ -1,9 +1,7 @@
-import Axios, { AxiosRequestConfig, AxiosInstance } from 'axios'
+import Axios, { AxiosInstance } from 'axios'
 import { GameInfo, FilterType } from '../types/apiTypes'
 
-const axiosConfig: AxiosRequestConfig = {}
-export default class Api /*implements ApiInterface */ {
-  // ToDo fix type
+export default class Api {
   axios: AxiosInstance
   constructor() {
     this.axios = Axios.create({

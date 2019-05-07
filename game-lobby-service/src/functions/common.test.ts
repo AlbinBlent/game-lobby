@@ -18,14 +18,6 @@ describe('splitArrayIntoChunks', () => {
       expect(res[0]).toEqual([1, 2, 3])
       expect(res[3]).toEqual([0])
     })
-    it('odd number chunk', () => {
-      const array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0]
-      const chunkSize = 3
-      const res = splitArrayIntoChunks(array, chunkSize)
-      expect(res.length).toEqual(4)
-      expect(res[0]).toEqual([1, 2, 3])
-      expect(res[3]).toEqual([0])
-    })
   })
   it('return a single array if chunk size is greater than array size', () => {
     const array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0]

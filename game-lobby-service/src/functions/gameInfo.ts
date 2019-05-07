@@ -2,6 +2,7 @@ import { GameInfo } from '../types/gameInfo'
 import { FilterType } from '../types/IDataService'
 import { splitArrayIntoChunks } from './common'
 
+// Ny kommentar: Lite besviken på denna. gameCollectionIds borde vara string[], let + forEach borde vara gjort med rekursion
 export const containsCollectionsIds = (
   game: GameInfo,
   gameCollectionIds?: string,
